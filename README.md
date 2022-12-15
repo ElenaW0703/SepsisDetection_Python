@@ -7,10 +7,8 @@ Sepsis is a significant public health concern. According to WHO and CDC's data, 
 The original data are in packed in `psc` files and can be download directly from the website mentioned above. Training dataset A includes 20,336 subjects’ psv files, while test dataset B has 20,000 subjects’ psc files. For simplicity, we directly load the cleaned datasets in the reports. The detailed reading-in process can be found in `AllCode` file. 
 
 1. Outcome variable: `SepsisLabel`  
-    The outcome variable is the `SepsisLabel`. For sepsis patients, it equals to 
-    ```math
+    The outcome variable is the `SepsisLabel`. For sepsis patients, it equals to \
     1 if t>= t_sepsis - 6 and 0 if t<t_sepsis-6, while for non-sepsis patients, `SepsisLabel` is 0
-    ```
     
 2. Covariates:  
     Both datasets totally have 40 covariates. This includes:
